@@ -19,7 +19,7 @@ Data Transmission
 To begin SPI communication, the main must send the clock signal and select the subnode by enabling the CS signal. 
 Usually chip select is an active low signal; hence, the main must send a logic 0 on this signal to select the subnode. 
 SPI is a full-duplex interface; both main and subnode can send data at the same time via the MOSI and MISO lines respectively. 
-During SPI communication, the data is simultaneously transmitted (shifted out serially onto the MOSI/SDO bus) and received (the data on the bus (MISO/SDI) 
+During SPI communication, the data is simultaneously transmitted (shifted out serially onto the MOSI bus) and received (the data on the bus (MISO) 
 is sampled or read in). The serial clock edge synchronizes the shifting and sampling of the data. 
 The SPI interface provides the user with flexibility to select the rising or falling edge of the clock to sample and/or shift the data
 
